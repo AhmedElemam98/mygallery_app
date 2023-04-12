@@ -65,7 +65,7 @@ showUploadDialog(BuildContext context) {
                     color: Colors.white,
                     text: 'Camera',
                   ),
-                  _buildPhoneNumberSubmitedBloc()
+                  _buildPhotoSubmitedBloc()
                 ],
               ),
             ),
@@ -76,7 +76,7 @@ showUploadDialog(BuildContext context) {
   );
 }
 
-Widget _buildPhoneNumberSubmitedBloc() {
+Widget _buildPhotoSubmitedBloc() {
   return BlocListener<AlbumCubit, AlbumState>(
     listenWhen: (previous, current) {
       return previous != current;
